@@ -2,12 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'seguranca_trabalho/home.html')
+
 
 from django.shortcuts import render, redirect
 from .models import Colaborador
-
+# Função para exibir a página inicial
+def home(request):
+    return render(request, 'cadastro/home.html')
+                  
 def cadastro_colaborador(request):
     if request.method == 'POST':
         nome = request.POST.get('nome')

@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastro/', include('seguranca_trabalho.urls')),  # Incluindo as URLs da aplicação seguranca_trabalho
+    path('', include('seguranca_trabalho.urls')),  # Incluindo as URLs da aplicação seguranca_trabalho
 ]
