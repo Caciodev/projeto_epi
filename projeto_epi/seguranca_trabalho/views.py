@@ -38,3 +38,9 @@ def cadastro_sucesso(request):
 def lista_colaboradores(request):
     colaboradores = Colaborador.objects.all()  # Busca todos os colaboradores
     return render(request, 'cadastro/lista_colaboradores.html', {'colaboradores': colaboradores})
+
+# -----------------EQUIPAMENTOS-------------------
+
+def cadastro_equipamento(request):
+    return render(request, 'cadastro/cadastro_equipamento.html')
+
